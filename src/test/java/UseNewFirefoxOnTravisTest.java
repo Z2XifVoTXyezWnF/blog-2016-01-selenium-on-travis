@@ -56,11 +56,11 @@ public class UseNewFirefoxOnTravisTest {
 
     @Test
     public void contextLoads() {
-        driver.get("http://localhost:8080");
+        driver.get("https://jenkins.io/");
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.textToBePresentInElementLocated(
-                By.id("hello"),
-                "Hello, world!")
+                By.id("download-banner-btn"),
+                "Download Jenkins")
         );
     }
 
