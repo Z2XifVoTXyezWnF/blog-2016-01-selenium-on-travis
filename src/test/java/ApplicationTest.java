@@ -21,7 +21,6 @@ public class ApplicationTest {
 
     @BeforeClass
     public static void setUp() throws IOException {
-        System.setProperty("webdriver.gecko.driver","C:\\geckodriver-v0.11.1-win64\\geckodriver.exe");
         driver = new FirefoxDriver();
     }
 
