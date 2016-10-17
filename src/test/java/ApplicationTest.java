@@ -17,7 +17,7 @@ import java.io.IOException;
 @SpringApplicationConfiguration(Application.class)
 @WebIntegrationTest
 public class ApplicationTest {
-    private FirefoxDriver driver;
+    private static FirefoxDriver driver;
 
     @BeforeClass
     public static void setUp() throws IOException {
